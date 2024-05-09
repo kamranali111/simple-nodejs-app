@@ -34,10 +34,11 @@ FROM node
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
+COPY package*.json ./ 
 
 COPY . .
+
+RUN npm install
 
 EXPOSE 3000
 
